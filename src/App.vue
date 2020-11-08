@@ -1,32 +1,22 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div id="app" class="">
+    <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+
+          <router-link class="navbar-item" to="/">Home</router-link>
+          <router-link class="navbar-item" to="/portfolio">Portfolio</router-link>
+          <router-link class="navbar-item" to="/about">About</router-link>
+          <router-link class="navbar-item" to="/contact">Contact</router-link>
+
+        </div>
+      </div>
+    </nav>
+    <router-view />
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p> Checkout the source code on <a href="https://github.com/Falken1998/cp3" target="_blank" style="text-decoration: none; color: black; font-style: bold;">Github</a></p>
+      </div>
+    </footer>
   </div>
 </template>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
